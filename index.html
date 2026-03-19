@@ -4,77 +4,141 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Інтелектуальна система групування та оцінки тестових сценаріїв у процесі автоматизованого тестування програмного забезпечення">
-  <meta name="keywords" content="автоматизоване тестування, кластеризація тестів, embeddings, машинне навчання, бакалаврська робота">
+  <meta name="keywords" content="автоматизоване тестування, кластеризація тестів, embeddings, машинне навчання, бакалаврська робота, тест-кейси">
   <meta name="author" content="Чухліб Євгеній ІН-23">
 
   <!-- Open Graph -->
   <meta property="og:title" content="Інтелектуальна система групування тестових сценаріїв">
-  <meta property="og:description" content="Бакалаврська робота — автоматизоване тестування з використанням ембедінгів та кластеризації">
+  <meta property="og:description" content="Бакалаврська робота — автоматизоване тестування ПЗ з використанням ембедінгів та кластеризації">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://naadir8.github.io/bachelor-thesis-landing/">
   <meta property="og:image" content="assets/img/university-logo.png">
-  <meta property="og:locale" content="uk_UA">
-
-  <!-- Twitter Card -->
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Інтелектуальна система групування тестових сценаріїв">
-  <meta name="twitter:description" content="Бакалаврська робота — автоматизоване тестування з ML">
-
-  <!-- Schema.org -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "EducationalOccupationalCredential",
-    "name": "Інтелектуальна система групування та оцінки тестових сценаріїв",
-    "description": "Бакалаврська робота з автоматизованого тестування ПЗ",
-    "educationalCredentialAwarded": "Бакалавр інформаційних технологій",
-    "author": {
-      "@type": "Person",
-      "name": "Чухліб Євгеній"
-    }
-  }
-  </script>
 
   <title>Інтелектуальна система групування тестових сценаріїв</title>
 
-  <!-- Favicon набір -->
   <link rel="icon" href="assets/favicon/favicon.ico" type="image/x-icon">
-  <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
-  <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="192x192" href="assets/favicon/android-chrome-192x192.png">
-  <link rel="icon" type="image/png" sizes="512x512" href="assets/favicon/android-chrome-512x512.png">
-
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <header role="banner">
+  <header>
     <div class="container">
       <img src="assets/image/university-logo.png"
            alt="Логотип університету"
            class="university-logo"
            loading="lazy">
 
-      <h1>Інтелектуальна система групування та оцінки тестових сценаріїв</h1>
-      <p>Бакалаврська робота — Чухліб Євгеній ІН-23</p>
+      <div class="lang-switch">
+        <button class="lang-btn active" data-lang="uk">UA</button>
+        <button class="lang-btn" data-lang="en">EN</button>
+      </div>
+
+      <h1 data-uk="Інтелектуальна система групування та оцінки тестових сценаріїв"
+          data-en="Intelligent System for Test Scenario Grouping and Evaluation">
+        Інтелектуальна система групування та оцінки тестових сценаріїв
+      </h1>
+
+      <p data-uk="Бакалаврська робота — Чухліб Євгеній ІН-23"
+         data-en="Bachelor's thesis — Chukhlib Yevheniy IN-23">
+        Бакалаврська робота — Чухліб Євгеній ІН-23
+      </p>
     </div>
   </header>
 
-  <nav role="navigation" aria-label="Основна навігація">
-    <div class="container">
-    </div>
-  </nav>
+  <main>
+    <section id="relevance" class="section">
+      <div class="container">
+        <h2 data-uk="Актуальність теми" data-en="Relevance of the topic">Актуальність теми</h2>
 
-  <main role="main">
-    <div class="container">
-      <p>Це базова структура лендінгу. Контент та функціональність додаватимуться в наступних стадіях розробки.</p>
-    </div>
+        <p data-uk="У сучасних програмних проєктах кількість тест-кейсів часто перевищує кілька тисяч. Багато з них дублюють один одного, що призводить до значних витрат часу та ресурсів на виконання регресійного тестування. Розроблена система автоматично аналізує текстові описи тестових сценаріїв, перетворює їх на векторні представлення (embeddings) та групує схожі тести, дозволяючи суттєво оптимізувати тест-сюїт."
+           data-en="In modern software projects, the number of test cases often exceeds several thousand. Many of them duplicate each other, leading to significant time and resource costs. The developed system automatically analyzes textual descriptions of test scenarios, converts them into vector representations (embeddings), and groups similar tests, allowing substantial optimization of the test suite.">
+          У сучасних програмних проєктах кількість тест-кейсів часто перевищує кілька тисяч. Багато з них дублюють один одного, що призводить до значних витрат часу та ресурсів на виконання регресійного тестування. Розроблена система автоматично аналізує текстові описи тестових сценаріїв, перетворює їх на векторні представлення (embeddings) та групує схожі тести, дозволяючи суттєво оптимізувати тест-сюїт.
+        </p>
+      </div>
+    </section>
+
+    <section id="goals" class="section">
+      <div class="container">
+        <h2 data-uk="Мета та завдання" data-en="Goal and Objectives">Мета та завдання</h2>
+
+        <ul>
+          <li data-uk="Мета: розробити інтелектуальну систему автоматичного групування та оцінки тестових сценаріїв за допомогою технологій машинного навчання."
+              data-en="Goal: develop an intelligent system for automatic grouping and evaluation of test scenarios using machine learning technologies.">
+            Мета: розробити інтелектуальну систему автоматичного групування та оцінки тестових сценаріїв за допомогою технологій машинного навчання.
+          </li>
+
+          <li data-uk="Отримати векторні представлення (embeddings) текстових описів тестових сценаріїв."
+              data-en="Obtain vector representations (embeddings) of textual descriptions of test scenarios.">
+            Отримати векторні представлення (embeddings) текстових описів тестових сценаріїв.
+          </li>
+
+          <li data-uk="Виконати кластеризацію та оцінити якість за метриками ARI, NMI та Silhouette Score."
+              data-en="Perform clustering and evaluate quality using ARI, NMI and Silhouette Score metrics.">
+            Виконати кластеризацію та оцінити якість за метриками ARI, NMI та Silhouette Score.
+          </li>
+
+          <li data-uk="Розробити систему оцінки тестових сценаріїв за критеріями покриття, ризику та дублювання."
+              data-en="Develop a system for evaluating test scenarios based on coverage, risk and duplication criteria.">
+            Розробити систему оцінки тестових сценаріїв за критеріями покриття, ризику та дублювання.
+          </li>
+
+          <li data-uk="Створити веб-інтерфейс для візуалізації результатів кластеризації та оцінки."
+              data-en="Create a web interface for visualizing clustering and evaluation results.">
+            Створити веб-інтерфейс для візуалізації результатів кластеризації та оцінки.
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="results" class="section">
+      <div class="container">
+        <h2 data-uk="Очікувані результати" data-en="Expected Results">Очікувані результати</h2>
+
+        <p data-uk="Зменшення кількості тест-кейсів на 30–50% завдяки виявленню дублікатів, підвищення якості покриття функціональності, скорочення часу виконання регресійного тестування, а також отримання інструменту для візуального аналізу та пріоритизації тестів."
+           data-en="Reduction of test cases by 30–50% by detecting duplicates, improved coverage quality, reduced regression testing time, and obtaining a tool for visual analysis and test prioritization.">
+          Зменшення кількості тест-кейсів на 30–50% завдяки виявленню дублікатів, підвищення якості покриття функціональності, скорочення часу виконання регресійного тестування, а також отримання інструменту для візуального аналізу та пріоритизації тестів.
+        </p>
+      </div>
+    </section>
+
+    <section id="contacts" class="section">
+      <div class="container">
+        <h2 data-uk="Контакти" data-en="Contacts">Контакти</h2>
+
+        <p data-uk="Автор: Чухліб Євгеній ІН-23<br>Email: <a href='mailto:Eugenius1418@gmail.com'>Eugenius1418@gmail.com</a><br>GitHub: <a href='https://github.com/Naadir8'>Naadir8</a><br>Репозиторій лендінгу: <a href='https://github.com/Naadir8/bachelor-thesis-landing'>github.com/Naadir8/bachelor-thesis-landing</a>"
+           data-en="Author: Chukhlib Yevheniy IN-23<br>Email: <a href='mailto:Eugenius1418@gmail.com'>Eugenius1418@gmail.com</a><br>GitHub: <a href='https://github.com/Naadir8'>Naadir8</a><br>Landing repository: <a href='https://github.com/Naadir8/bachelor-thesis-landing'>github.com/Naadir8/bachelor-thesis-landing</a>">
+          Автор: Чухліб Євгеній ІН-23<br>
+          Email: <a href="mailto:Eugenius1418@gmail.com">Eugenius1418@gmail.com</a><br>
+          GitHub: <a href="https://github.com/Naadir8">Naadir8</a><br>
+          Репозиторій лендінгу: <a href="https://github.com/Naadir8/bachelor-thesis-landing">github.com/Naadir8/bachelor-thesis-landing</a>
+        </p>
+      </div>
+    </section>
   </main>
 
-  <footer role="contentinfo">
+  <footer>
     <div class="container">
-      <p>© 2026 Чухліб Євгеній. Всі права захищено.</p>
+      <p data-uk="© 2026 Чухліб Євгеній. Всі права захищено."
+         data-en="© 2026 Chukhlib Yevheniy. All rights reserved.">
+        © 2026 Чухліб Євгеній. Всі права захищено.
+      </p>
     </div>
   </footer>
+
+  <script>
+    function switchLanguage(lang) {
+      document.querySelectorAll('[data-uk], [data-en]').forEach(el => {
+        el.innerHTML = el.getAttribute(`data-${lang}`);
+      });
+
+      document.querySelectorAll('.lang-btn').forEach(btn => {
+        btn.classList.toggle('active', btn.dataset.lang === lang);
+        btn.onclick = () => switchLanguage(btn.dataset.lang);
+      });
+
+      document.documentElement.lang = lang;
+    }
+
+    switchLanguage('uk');
+  </script>
 </body>
 </html>
