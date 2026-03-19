@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://naadir8.github.io/bachelor-thesis-landing/sitemap.xml

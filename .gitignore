@@ -1,0 +1,27 @@
+# PyCharm / JetBrains
+.idea/
+
+# Virtual environments
+.venv/
+venv/
+ENV/
+env/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Temp files
+*.tmp
+*.bak
+*.log
+
+# macOS / Windows
+.DS_Store
+Thumbs.db
+
+# Generated data
+data/processed/*.npy
+data/processed/*.pkl
